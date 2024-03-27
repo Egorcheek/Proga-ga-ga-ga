@@ -17,6 +17,10 @@ public class HumanBeing implements Comparable<HumanBeing> {
         return name;
     }
 
+    public void setName(String name) {
+        this.name = name;
+    }
+
     @Override
     public int compareTo(HumanBeing other) {
         return Long.compare(this.id, other.id);
