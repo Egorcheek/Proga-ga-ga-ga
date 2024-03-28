@@ -9,6 +9,14 @@ public class HumanBeing implements Comparable<HumanBeing> {
         this.name = name;
     }
 
+    public HumanBeing(long id, String name) {
+        this.id = id;
+        if (id > nextId){
+            nextId = id + 1;
+        }
+        this.name = name;
+    }
+
     public long getId() {
         return id;
     }
